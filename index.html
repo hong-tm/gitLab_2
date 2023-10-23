@@ -6,9 +6,30 @@
     <title>Lab2</title>
 
     <style>
-        table, th, td {
+
+        table {
+            margin: 0 auto;
+            margin-top: 10%;
+            margin-bottom: 10%;
+            width: 70%; 
+            border: 3px solid black;
+            border-collapse: collapse;
+        }
+
+        th, td {
           border: 3px solid black;
-          border-collapse: collapse;
+          border-collapse: collapse; 
+          text-align: left;
+          padding: 10px; 
+          width: 400px;
+        }
+
+        .profile-image{
+            width: 200px; 
+            height: 190px; 
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
         }
     </style>
 </head>
@@ -16,20 +37,67 @@
 <body>
     <table>
         <tr>
-          <td>Name</td>
-          <td>Photo</td>
+          <th>Name</th>
+          <td>Liew Yi Hong</td>
+          <td><img src="C:\Users\yi hong liew\Desktop\UTHM\SEM_4\BIC21203 WEB DEVELOPMENT\Lab_2\webdev_lab_2\profile.jpg" alt="hong's profile image" class="profile-image"></td>
         </tr>
         <tr>
-          <td>Date of birth</td>
+          <th>Date of birth</th>
+          <td colspan="2">20 November 2000</td>
         </tr>
         <tr>
-            <td>Religion</td>
+            <th>Religion</th>
+            <td colspan="2">Buddha</td>
         </tr>
         <tr>
-            <td>Race</td>
+            <th>Race</th>
+            <td colspan="2">Chinese</td>
         </tr>
         <tr>
-            <td>Address</td>
+            <th rowspan="4">Address</th>
+            <th>Street</th>
+            <td>Jalan Liew Hon Thin</td>
+        </tr>
+        <tr>
+            <th>Town</th>
+            <td>Kuching</td>
+        </tr>
+        <tr>
+            <th>District</th>
+            <td>Bau</td>
+        </tr>
+        <tr>
+            <th>State</th>
+            <td>Sarawak</td>
+        </tr>
+        <tr>
+            <th rowspan="3">Contact</th>
+            <th>Mobile Phone</th>
+            <td>014-9934699</td>
+        </tr>
+        <tr>
+            <th>Social Media</th>
+            <td>hong1234day</td>
+        </tr>
+        <tr>
+            <th>Website</th>
+            <td>https://github.com/hong-tm</td>
+        </tr>
+        <tr>
+            <th>Course and Institution</th>
+            <td colspan="2">UTHM, BACHELOR OF COMPUTER SCIENCE (SOFTWARE ENGINEERING) WITH HONOURS</td>
+        </tr>
+        <tr>
+            <th>Programming skills</th>
+            <td colspan="2">Java, HTML, C, C#, C++, Python, SQL, PHP</td>
+        </tr>
+        <tr>
+            <th>Personal Interest</th>
+            <td colspan="2">Youtube, video encoder and decoder, anime, jpop music</td>
+        </tr>
+        <tr>
+            <th>Future plan in 2024</th>
+            <td colspan="2">Improve skills on coding and enhance my productivity and efficiency!</td>
         </tr>
       </table>
 </body>
